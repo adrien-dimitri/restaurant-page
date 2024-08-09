@@ -6,6 +6,9 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20px auto;
     background: 
         linear-gradient(
             rgba(0, 0, 0, 0.5), 
@@ -37,4 +40,30 @@ body {
     color: antiquewhite;
     font-weight: 200;
     font-size: 20px;
+}
+
+nav {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 100px 100px 100px 200px;
+    grid-template-rows: 50px;
+    column-gap: 30px;
+}
+
+.logo {
+    filter: invert(90%);
+    height: 50px;
+ 
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: antiquewhite;
+    z-index: 2;
+    cursor: pointer;
 }
