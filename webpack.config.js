@@ -7,6 +7,7 @@ module.exports = {
     index: './src/index.js',
     navigation: './src/navigation.js',
     home: './src/home.js',
+    menu: './src/menu.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -32,6 +33,10 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.(csv|tsv)$/i,
+        use: ['csv-loader'],
       },
     ],
   },
