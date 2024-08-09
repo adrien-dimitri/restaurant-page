@@ -10,10 +10,10 @@ export default function createNav() {
     logo.src = Logo;
     logo.alt = "Pasta logo"
     logo.classList.add("logo")
-    home.classList.add("home-btn");
-    menu.classList.add("menu-btn");
-    about.classList.add("about-btn");
-    order.classList.add("order-btn");
+    home.setAttribute("data-action", "home");
+    menu.setAttribute("data-action", "menu");
+    about.setAttribute("data-action", "about");
+    order.setAttribute("data-action", "order");
 
     home.innerHTML = "HOME";
     menu.innerHTML = "MENU";
