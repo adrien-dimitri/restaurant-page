@@ -1,7 +1,7 @@
 import './style.css';
-import loadContent from './home.js';
+import loadHome from './home.js';
+import createNav from './navigation.js';
 
-const content = loadContent();
+createNav();
 
-document.querySelector("#content").appendChild(content.RestName);
-document.querySelector("#content").appendChild(content.RestInfo);
+loadHome();

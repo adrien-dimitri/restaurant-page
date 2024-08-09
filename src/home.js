@@ -1,16 +1,14 @@
 
-export default function loadContent() {
+export default function loadHome() {
     const RestName = document.createElement('div');
-    const RestInfo = document.createElement('div')
+    const RestInfo = document.createElement('div');
 
-    RestName.classList.add("restaurant-name")
-    RestInfo.classList.add("order-online")
+    RestName.classList.add("restaurant-name");
+    RestInfo.classList.add("order-online");
     
-    RestName.innerHTML = "PASTA HEAVEN"
-    RestInfo.innerHTML = "ONLINE ORDERING NOW AVAILABLE!"
+    RestName.innerHTML = "PASTA HEAVEN";
+    RestInfo.innerHTML = "ONLINE ORDERING NOW AVAILABLE!";
 
-    return {
-        RestName,
-        RestInfo
-    }
+    document.querySelector("#content").appendChild(RestName);
+    document.querySelector("#content").appendChild(RestInfo);
 }
