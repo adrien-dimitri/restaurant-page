@@ -11,8 +11,8 @@ body {
     grid-template-rows: 20px auto;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.5), 
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
         ),
         url('./background.jpg');  /* Photo by Lisa Fotios: https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/ */
     background-size: 1920px 1280px;
@@ -66,4 +66,43 @@ nav button {
     color: antiquewhite;
     z-index: 2;
     cursor: pointer;
+}
+
+.menu-container {
+    font-family: "Mekona";
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 180px 180px 180px;
+    column-gap: 100px;
+    row-gap: 100px;
+    color: antiquewhite;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.item-picture {
+    width: 90% ;
+}
+
+.details-container {
+    display: grid;
+    grid-template-rows: 80px 50px auto;
+}
+
+.item-title {
+    color: darksalmon;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.item-price {
+    font-size: 30px;
+}
+
+.item-ingredients {
+    font-size: 15px;
+    font-weight: lighter;
 }
