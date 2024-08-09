@@ -1,3 +1,29 @@
-h1 {
-    color: crimson;
+body {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('./background.jpg');
+    background-size: 1920px 1280px;
+    background-repeat: no-repeat;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.restaurant-name {
+    color: antiquewhite;
+    font-size: 100px;
+}
+
+
+.order-online {
+    color: antiquewhite;
+    font-size: 20px;
 }
