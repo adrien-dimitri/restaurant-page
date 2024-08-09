@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Mekona";
+    src: url('./mekona.woff2') format('woff2'),
+        url('./mekona.woff') format('woff');
+    font-style: normal;
+}
+
 body {
     background: 
         linear-gradient(
@@ -18,12 +25,16 @@ body {
 }
 
 .restaurant-name {
+    font-family: "Mekona";
     color: antiquewhite;
     font-size: 100px;
+    font-weight: 900;
 }
 
 
 .order-online {
+    font-family: "Mekona";
     color: antiquewhite;
+    font-weight: 200;
     font-size: 20px;
 }
