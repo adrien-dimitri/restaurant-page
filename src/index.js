@@ -1,5 +1,5 @@
 import './style.css';
-import loadContent from './load.js';
+import loadContent from './home.js';
 
 const content = loadContent();
 
