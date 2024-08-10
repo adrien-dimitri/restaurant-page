@@ -8,6 +8,7 @@ module.exports = {
     navigation: './src/navigation.js',
     home: './src/home.js',
     menu: './src/menu.js',
+    about: './src/about.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
