@@ -2,6 +2,7 @@ import './style.css';
 import loadHome from './home.js';
 import createNav from './navigation.js';
 import loadMenu from './menu.js';
+import loadAbout from './about.js'
 
 createNav();
 loadHome();
@@ -19,7 +20,7 @@ buttons.forEach(button => {
                 loadMenu();
                 break;
             case "about":
-                console.log("PRESSED ABOUT");
+                loadAbout();
                 break;
             case "order":
                 console.log("PRESSED ORDER");
