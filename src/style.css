@@ -78,6 +78,12 @@ nav button {
     color: antiquewhite;
     z-index: 2;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+nav button:hover {
+    color:darkgoldenrod;
+    transform: scale(1.1);
 }
 
 .menu-container {
@@ -85,7 +91,7 @@ nav button {
     display: grid;
     grid-template-columns: 600px 600px;
     grid-template-rows: 180px 180px 180px;
-    column-gap: 100px;
+    column-gap: 200px;
     row-gap: 100px;
     color: antiquewhite;
 }
@@ -97,6 +103,11 @@ nav button {
 
 .item-picture {
     width: 90% ;
+    transition: transform .2s;
+}
+
+.item-picture:hover {
+    transform: scale(1.5);
 }
 
 .details-container {
@@ -105,7 +116,7 @@ nav button {
 }
 
 .item-title {
-    color: darksalmon;
+    color:darkgoldenrod;
     font-size: 30px;
     font-weight: bolder;
 }
