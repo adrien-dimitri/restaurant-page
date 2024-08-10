@@ -30,6 +30,14 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        use: [{
+          loader: 'image-webpack-loader',
+          options: {
+              pngquant: {
+                  quality: [.90, .95],
+              },
+          }
+        }],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
