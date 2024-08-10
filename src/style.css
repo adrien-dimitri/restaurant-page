@@ -30,8 +30,14 @@ body {
 .restaurant-name {
     font-family: "Mekona";
     color: antiquewhite;
-    font-size: 100px;
+    font-size: 120px;
     font-weight: 900;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.restaurant-name.loaded {
+    opacity: 1;
 }
 
 
@@ -40,6 +46,12 @@ body {
     color: antiquewhite;
     font-weight: 200;
     font-size: 20px;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.order-online.loaded {
+    opacity: 1;
 }
 
 nav {
