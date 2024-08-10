@@ -33,7 +33,7 @@ body {
     font-size: 120px;
     font-weight: 900;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 2.0s;
 }
 
 .restaurant-name.loaded {
@@ -47,7 +47,7 @@ body {
     font-weight: 200;
     font-size: 20px;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 1.0s;
 }
 
 .order-online.loaded {
@@ -99,6 +99,12 @@ nav button:hover {
 .item-container {
     display: grid;
     grid-template-columns: 400px auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.item-container.loaded {
+    opacity: 1;
 }
 
 .item-picture {
@@ -179,4 +185,21 @@ nav button:hover {
     position: relative; 
     z-index: 1; 
     cursor: pointer; 
+}
+
+.welcome-container,
+.story-container,
+.ourMenu-container,
+.join-container,
+.salutation-container {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.welcome-container.loaded,
+.story-container.loaded,
+.ourMenu-container.loaded,
+.join-container.loaded,
+.salutation-container.loaded {
+    opacity: 1;
 }
