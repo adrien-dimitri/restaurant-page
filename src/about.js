@@ -12,6 +12,10 @@ export default function loadAbout() {
 
     sections.forEach(section => {
         const sectionElement = createSection(section.title, section.heading, section.paragraph);
+        setTimeout(() => {
+            sectionElement.classList.add("loaded");
+        }, 0)
+    
         aboutContainer.appendChild(sectionElement);
     });
 

@@ -56,5 +56,9 @@ function createItem(title, price, ingredients, pictureSrc) {
     itemDiv.appendChild(detailsDiv);
     itemDiv.appendChild(picture);
 
+    setTimeout(() => {
+        itemDiv.classList.add("loaded");
+    }, 0)
+
     return itemDiv;
 }
