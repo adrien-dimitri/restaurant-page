@@ -7,29 +7,28 @@ import ravioli from "./ravioli.jpg";
 import pesto from "./pesto_genovese.jpg";
 import fettuccine from "./fettuccine_alfredo.jpg";
 
-const imageMap = {
-    "spaghetti_carbonara.jpg": spaghetti,
-    "penne_arrabbiata.jpg": penne,
-    "lasagna.jpg": lasagna,
-    "ravioli.jpg": ravioli,
-    "pesto_genovese.jpg": pesto,
-    "fettuccine_alfredo.jpg": fettuccine
-};
-
 export default function loadMenu() {
     const menuItems = Menu;
     const menuContainer = document.createElement('div');
     menuContainer.classList.add("menu-container");
 
     menuItems.forEach(item => {
-        const imagePath = imageMap[item[3]]
-        menuContainer.appendChild(createItem(item[0], item[1], item[2], imagePath));
+        menuContainer.appendChild(createItem(item[0], item[1], item[2], item[3]));
     });
     document.querySelector("#content").appendChild(menuContainer)
 
 }
 
-function createItem(title, price, ingredients, pictureSrc) {
+export function createItem(title, price, ingredients, pictureSrc) {
+    const imageMap = {
+        "spaghetti_carbonara.jpg": spaghetti,
+        "penne_arrabbiata.jpg": penne,
+        "lasagna.jpg": lasagna,
+        "ravioli.jpg": ravioli,
+        "pesto_genovese.jpg": pesto,
+        "fettuccine_alfredo.jpg": fettuccine
+    };
+
     const itemDiv = document.createElement('div');
     itemDiv.classList.add('item-container');
 
@@ -46,9 +45,11 @@ function createItem(title, price, ingredients, pictureSrc) {
     picture.classList.add('item-picture');
 
     titleDiv.innerHTML = title;
-    priceDiv.innerHTML = "€ "+price;
+    priceDiv.innerHTML = "€ " + price;
     ingredientsDiv.innerHTML = ingredients;
-    picture.src = pictureSrc;
+
+    const imagePath = imageMap[pictureSrc];
+    picture.src = imagePath;
 
     detailsDiv.appendChild(titleDiv);
     detailsDiv.appendChild(priceDiv);
