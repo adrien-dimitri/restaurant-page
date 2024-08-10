@@ -3,6 +3,7 @@ import loadHome from './home.js';
 import createNav from './navigation.js';
 import loadMenu from './menu.js';
 import loadAbout from './about.js'
+import loadOrder from './order.js'
 
 createNav();
 loadHome();
@@ -23,7 +24,7 @@ buttons.forEach(button => {
                 loadAbout();
                 break;
             case "order":
-                console.log("PRESSED ORDER");
+                loadOrder();
                 break;
         }
     });
