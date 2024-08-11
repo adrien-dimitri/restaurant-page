@@ -31,7 +31,7 @@ function createMenuAndBasket() {
 
     const totalContainer = document.createElement("div");
     totalContainer.classList.add("total-container");
-    totalContainer.innerHTML = "<h3>Total: $<span id='total-price'>0.00</span></h3>";
+    totalContainer.innerHTML = "<h3>Total: €<span id='total-price'>0.00</span></h3>";
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add("order-menu");
