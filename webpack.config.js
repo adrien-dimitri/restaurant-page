@@ -33,9 +33,11 @@ module.exports = {
         use: [{
           loader: 'image-webpack-loader',
           options: {
-              pngquant: {
-                  quality: [.90, .95],
-              },
+            // FIX: This bypasses the optimizer if the binaries (like mozjpeg) are missing
+            disable: true, 
+            pngquant: {
+              quality: [0.90, 0.95],
+            },
           }
         }],
       },
